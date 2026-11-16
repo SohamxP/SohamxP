@@ -71,6 +71,24 @@ A full-stack academic platform that transforms uploaded course material into an 
 
 ---
 
+## [OpenFile Chess](https://github.com/SohamxP/chess-engine)
+
+### Custom Java Chess Engine & Full-Stack Game Review
+
+A full-stack chess application combining a **from-scratch Java engine** with a responsive game interface and a separate, browser-based game review experience.
+
+* Implemented legal move generation and complete game rules, including **castling, en passant, promotion, checkmate, stalemate, repetition, and move-count draws**
+* Built a configurable computer opponent with **iterative deepening, negamax, alpha-beta pruning, quiescence search, and a history-aware transposition table**
+* Exposed the chess engine through a **Spring Boot REST API** and built a **React + TypeScript** interface with animated moves, drag-and-drop, FIDE algebraic notation, undo, captured material, and move replay
+* Added a **dedicated game review page** using Stockfish 19 Lite in a browser Web Worker for an evaluation graph, approximate move grading, and suggested alternatives; the **custom Java engine**, not Stockfish, powers normal gameplay
+* Added **Java tests, frontend unit tests, Playwright browser tests, Docker packaging, and GitHub Actions CI**
+
+**Tech:** Java 25 • Spring Boot • React 19 • TypeScript • Vite • Stockfish.js (review only) • Playwright • Docker • GitHub Actions
+
+[![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/SohamxP/chess-engine)
+
+---
+
 ## [RideWise](https://github.com/SohamxP/ridewise)
 
 ### ML-Powered Ride Decision Platform
