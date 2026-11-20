@@ -52,21 +52,22 @@ I’m a Computer Science student at the **University of Texas at Arlington** pur
 
 # 🚀 Featured Projects
 
-## [PlyForge](https://github.com/SohamxP/chess-engine)
+## [PlySense](https://github.com/SohamxP/chess-engine)
 
-### Custom Java Chess Engine & Full-Stack Game Review
+### Personal Chess Improvement Engine · Custom Java AI · Stockfish Review · Decision Lab
 
-A full-stack chess application combining a **from-scratch Java engine** with a responsive game interface and a separate, browser-based game review experience.
+**PlySense** is a local-first chess improvement platform that lets players import their games, review decisions with Stockfish, and revisit mistakes through spaced-repetition training. A **custom Java chess engine** powers gameplay; Stockfish runs separately in the browser for analysis.
 
-* Implemented legal move generation and complete game rules, including **castling, en passant, promotion, checkmate, stalemate, repetition, and move-count draws**
-* Built a configurable computer opponent with **iterative deepening, negamax, alpha-beta pruning, quiescence search, and a history-aware transposition table**
-* Exposed the chess engine through a **Spring Boot REST API** and built a **React + TypeScript** interface with animated moves, drag-and-drop, FIDE algebraic notation, undo, captured material, and move replay
-* Added a **dedicated game review page** using Stockfish 19 Lite in a browser Web Worker for an evaluation graph, approximate move grading, and suggested alternatives; the **custom Java engine**, not Stockfish, powers normal gameplay
-* Added **Java tests, frontend unit tests, Playwright browser tests, Docker packaging, and GitHub Actions CI**
+* Implemented legal move generation and game rules in Java, including **castling, en passant, promotion, checkmate, stalemate, repetition, and move-count draws**
+* Built the computer opponent with **iterative deepening, negamax, alpha-beta pruning, quiescence search, and a history-aware transposition table**
+* Exposed gameplay through a **Spring Boot REST API** and built a responsive **React + TypeScript** chessboard with SAN notation, animations, move replay, and captured material
+* Added **PGN import** for external games, player-side selection, local game archives, and a standalone Game Review page
+* Integrated **Stockfish 19 Lite** for full-game analysis, targeted depth-16 verification of suspicious moves, and resumable browser-local evaluation caching
+* Developed **Decision Lab**, which turns confirmed mistakes into interactive positions with written reflections and spaced recall; tested the system with **Java, Vitest, Playwright, Docker, and GitHub Actions**
 
-**Tech:** Java 25 • Spring Boot • React 19 • TypeScript • Vite • Stockfish.js (review only) • Playwright • Docker • GitHub Actions
+**Tech:** Java 25 • Spring Boot • React 19 • TypeScript • Vite • Stockfish.js • chess.js • IndexedDB • Playwright • Docker • GitHub Actions
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Play_PlyForge-000000?style=for-the-badge&logo=render&logoColor=white)](https://openfile-chess.onrender.com/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_PlySense-000000?style=for-the-badge&logo=render&logoColor=white)](https://openfile-chess.onrender.com/)
 [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/SohamxP/chess-engine)
 
 ---
