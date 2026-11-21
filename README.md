@@ -54,7 +54,7 @@ I’m a Computer Science student at the **University of Texas at Arlington** pur
 
 ## [PlySense](https://github.com/SohamxP/chess-engine)
 
-### Personal Chess Improvement Engine · Custom Java AI · Stockfish Review · Decision Lab
+### PlySense v1.0 · Custom Java Chess Engine · Verified Mistake Detection · Adaptive Training
 
 **PlySense** is a local-first chess improvement platform that lets players import their games, review decisions with Stockfish, and revisit mistakes through spaced-repetition training. A **custom Java chess engine** powers gameplay; Stockfish runs separately in the browser for analysis.
 
@@ -62,7 +62,7 @@ I’m a Computer Science student at the **University of Texas at Arlington** pur
 * Built the computer opponent with **iterative deepening, negamax, alpha-beta pruning, quiescence search, and a history-aware transposition table**
 * Verified the Java move generator against **canonical perft node counts**; optimized the Java search by reusing legal-move enumerations, achieving **24–29% lower median latency in seven-run depth-2 CI A/B benchmarks** across three fixed positions, with identical moves and scores
 * Exposed gameplay through a **Spring Boot REST API** and built a responsive **React + TypeScript** chessboard with SAN notation, animations, move replay, and captured material
-* Added **PGN import** for external games, player-side selection, local game archives, and a standalone Game Review page
+* Added **PGN import** with a 2,000-game **IndexedDB library**, non-destructive migration from existing browser data, portable JSON backups, and a standalone Game Review page
 * Integrated **Stockfish 19 Lite** for full-game analysis, targeted depth-16 verification of suspicious moves, and resumable browser-local evaluation caching
 * Built **Personal Mistake Patterns**, a cross-game report identifying legally provable missed mates, free captures, and exposed major pieces, with analysis coverage and direct evidence links
 * Extended **Decision Lab** with evidence-backed exercise tags, deterministic **adaptive scheduling**, and a browser-local **training dashboard**; validated the full **PGN import → pattern detection → game review → personalized training** flow with **Playwright**, including corrupted-archive recovery
@@ -71,6 +71,8 @@ I’m a Computer Science student at the **University of Texas at Arlington** pur
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_PlySense-000000?style=for-the-badge&logo=render&logoColor=white)](https://openfile-chess.onrender.com/)
 [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/SohamxP/chess-engine)
+
+[System architecture](https://github.com/SohamxP/chess-engine/blob/main/docs/architecture/README.md) · [v1.0 release notes](https://github.com/SohamxP/chess-engine/blob/main/docs/release/v1.0.md) · [Demo walkthrough](https://github.com/SohamxP/chess-engine/blob/main/docs/demo/README.md)
 
 ---
 
