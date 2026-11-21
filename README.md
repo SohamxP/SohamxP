@@ -60,12 +60,12 @@ I’m a Computer Science student at the **University of Texas at Arlington** pur
 
 * Implemented legal move generation and game rules in Java, including **castling, en passant, promotion, checkmate, stalemate, repetition, and move-count draws**
 * Built the computer opponent with **iterative deepening, negamax, alpha-beta pruning, quiescence search, and a history-aware transposition table**
-* Verified the Java move generator against **canonical perft node counts** (starting position, Kiwipete, and tricky endgame positions); created a reproducible **unpruned vs. alpha-beta/TT search benchmark** reporting latency distributions, visited nodes, and allocation measurements
+* Verified the Java move generator against **canonical perft node counts**; optimized the Java search by reusing legal-move enumerations, achieving **24–29% lower median latency in seven-run depth-2 CI A/B benchmarks** across three fixed positions, with identical moves and scores
 * Exposed gameplay through a **Spring Boot REST API** and built a responsive **React + TypeScript** chessboard with SAN notation, animations, move replay, and captured material
 * Added **PGN import** for external games, player-side selection, local game archives, and a standalone Game Review page
 * Integrated **Stockfish 19 Lite** for full-game analysis, targeted depth-16 verification of suspicious moves, and resumable browser-local evaluation caching
 * Built **Personal Mistake Patterns**, a cross-game report identifying legally provable missed mates, free captures, and exposed major pieces, with analysis coverage and direct evidence links
-* Extended **Decision Lab** with evidence-backed exercise tags, deterministic **adaptive scheduling** for weaknesses recurring across distinct games, and a browser-local **training dashboard** tracking actual attempt outcomes and sample sizes; validated with **Java, Vitest, Playwright, Docker, and GitHub Actions**
+* Extended **Decision Lab** with evidence-backed exercise tags, deterministic **adaptive scheduling**, and a browser-local **training dashboard**; validated the full **PGN import → pattern detection → game review → personalized training** flow with **Playwright**, including corrupted-archive recovery
 
 **Tech:** Java 25 • Spring Boot • React 19 • TypeScript • Vite • Stockfish.js • chess.js • IndexedDB • Playwright • Docker • GitHub Actions
 
