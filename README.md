@@ -65,7 +65,7 @@ I’m a Computer Science student at the **University of Texas at Arlington** pur
 * Added **PGN import** for external games, player-side selection, local game archives, and a standalone Game Review page
 * Integrated **Stockfish 19 Lite** for full-game analysis, targeted depth-16 verification of suspicious moves, and resumable browser-local evaluation caching
 * Built **Personal Mistake Patterns**, a cross-game report identifying legally provable missed mates, free captures, and exposed major pieces, with analysis coverage and direct evidence links
-* Developed **Decision Lab**, which turns confirmed mistakes into interactive positions with written reflections and spaced recall; tested the system with **Java, Vitest, Playwright, Docker, and GitHub Actions**
+* Extended **Decision Lab** with evidence-backed exercise tags, deterministic **adaptive scheduling** for weaknesses recurring across distinct games, and a browser-local **training dashboard** tracking actual attempt outcomes and sample sizes; validated with **Java, Vitest, Playwright, Docker, and GitHub Actions**
 
 **Tech:** Java 25 • Spring Boot • React 19 • TypeScript • Vite • Stockfish.js • chess.js • IndexedDB • Playwright • Docker • GitHub Actions
 
